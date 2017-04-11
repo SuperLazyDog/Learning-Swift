@@ -35,3 +35,41 @@ var optionalFunc: (Int?, Double?) -> String?
 var optionalClosure: ((Double?) -> String?)?
 typealias MyClosure = (Double) -> Int
 typealias MyOplCls = MyClosure?
+
+//capture
+
+var globalCount = 0
+func maker(_ a: Int, _ b: Int) -> ()->Int {
+    var localVar = a
+    return { () -> Int in
+        globalCount += 1
+        localVar += b
+        return localVar
+    }
+}
+
+var m1 = maker(10, 1)
+print("m1() = \(m1()), globalCount = \(globalCount)")
+print("m1() = \(m1()), globalCount = \(globalCount)")
+
+class Friend {
+    let name: String
+    init(name: String) {
+        self.name = name
+    }
+    deinit {
+        print("deinit", name)
+    }
+    func sayName() {
+        print(name + "です。")
+    }
+    func sayHello(message: String) {
+        print("message", "、\(name)です。")
+    }
+    func sayHello(to s: String) {
+        print(s + "さん、こんにちは。")
+    }
+    func sayHello(to f: Friend) {
+        self.sayHello(to: f.name)
+    }
+}
