@@ -73,3 +73,123 @@ class Friend {
         self.sayHello(to: f.name)
     }
 }
+
+
+let testInt = { () in
+    return 5
+}
+
+let testDouble = { () in
+    return 5.0
+}
+
+let testString = { () in
+    return "testString"
+}
+
+print(testInt(), testDouble(), testString(), separator: "\n")
+
+func testIntFunc() {
+    print(5)
+}
+
+/*func testIntFunc() -> () { //返回（）型，也就是不返回任何类型
+    print(5)
+}
+
+func testIntFunc() -> Void {  //返回Void和（）等价，也是不返回任何类型
+    print(5)
+}
+
+func func-name(arg-list) -> ret-type {
+    statment
+}*/
+
+
+var clos: (Int, Int) -> String = {
+    a, b -> String in
+    return "\(a)/\(b)"
+}
+
+
+clos = { a, b in
+ "\(a)/\(b)"
+}
+
+var test_1: (Double, Double) -> Double = { $0 + $1 }
+test_1(1.1, 2.2)
+
+
+let list = ["fig.pdf", "filelist1.swift", "OLD", "sample.swift"]
+let slist = list.sorted()
+print(list)
+print(slist)
+let test_2: (String, String) -> Bool = {(a: String, b: String) -> Bool in
+        if a.characters.count >= b.characters.count {
+            return true
+        }else {
+            return false
+        }
+    }
+let sorted = list.sorted(by: {(a: String, b: String) -> Bool in
+    if a.characters.count >= b.characters.count {
+        return true
+    }else {
+        return false
+    }
+})
+print(sorted)
+print(list.sorted())
+
+func compare(strA: String, strB: String) -> Bool {
+    if strA.hasPrefix(strB) {
+        return false
+    }else {
+        return true
+    }
+}
+
+print("func test = \(list.sorted(by: compare))")
+
+func isIncluded(str: String)  -> Bool {
+    return str.hasPrefix("sam")
+}
+list.filter(isIncluded)
+
+let storage = [1, 324, 64564, 125, 789, 91, 77, 12345]//创建测试库
+func separate(orignArray: [Int], by filter: (Int) -> Bool) -> (paired: [Int], cantPaired: [Int]) {//分割数组的函数
+    var paired: [Int] = []
+    var cantPaired: [Int] = []
+    for item in orignArray {
+        if filter(item) {
+            paired.append(item)
+        }else {
+            cantPaired.append(item)
+        }
+    }
+    return (paired: paired, cantPaired: cantPaired)
+}
+
+func getOddNum(num: Int) -> Bool {//判断是否为奇数
+    if num%2 != 0 {
+        return true
+    }else {
+        return false
+    }
+}
+
+func getEvenNum(num: Int) -> Bool {//判断是否为偶数
+    if num%2 == 0 {
+        return true
+    }else {
+        return false
+    }
+}
+print("storage: \(storage)\n---------------------------------------------------")
+print("getOdd:\n paired: \(separate(orignArray: storage, by: getOddNum).paired)\n cantPaired: \(separate(orignArray: storage, by: getOddNum).cantPaired)")
+print("getEven:\n paired: \(separate(orignArray: storage, by: getEvenNum).paired)\n cantPaired: \(separate(orignArray: storage, by: getEvenNum).cantPaired)")
+
+print(storage.map({(intNum: Int) -> String in
+    return "\(intNum) OK!"}))
+
+storage.reduce(1, +)
