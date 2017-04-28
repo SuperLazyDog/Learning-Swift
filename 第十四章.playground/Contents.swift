@@ -46,5 +46,6 @@ extension PickForever where T: Hashable {
     mutating func makeUnique() {
         let tmp = Set<T>(list)
         list = [T](tmp)
-    }
+   }
 }
+
