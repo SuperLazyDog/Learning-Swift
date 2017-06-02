@@ -1,4 +1,4 @@
-l# learning swift
+# learning swift
 
 This is the project which i used to learn Swift.
 
@@ -6,4 +6,5 @@ This is the project which i used to learn Swift.
 
 これはSwiftを勉強するためのリポジトリです。
 
-# TODO: NSDATA, DATA
+# some list
+TODO: NSDATA, DATA
