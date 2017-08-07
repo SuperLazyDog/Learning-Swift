@@ -21,3 +21,12 @@ import Foundation
 //-------------------------------------------------------
 var linkTest = LinkTest();
 linkTest.putsA();
+
+//-------------------------------------------------------
+//                       第一章
+//-------------------------------------------------------
+var chapter1 = Chapter1();
+chapter1.showDoubleNum();
+chapter1.castTest(num: 1234);
+chapter1.showDoubleNum(asInt: true);
+

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		370E11E61F382B9700528D40 /* link-test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370E11E51F382B9700528D40 /* link-test.swift */; };
+		370E11ED1F38379E00528D40 /* Chapter1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370E11EC1F38379E00528D40 /* Chapter1.swift */; };
 		3758E0A61F34683600AD4468 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3758E0A51F34683600AD4468 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		370E11E51F382B9700528D40 /* link-test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "link-test.swift"; sourceTree = "<group>"; };
+		370E11EC1F38379E00528D40 /* Chapter1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chapter1.swift; sourceTree = "<group>"; };
 		3758E0A21F34683600AD4468 /* Learning-Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Learning-Swift"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3758E0A51F34683600AD4468 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -40,6 +42,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		370E11EB1F38377500528D40 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				370E11EC1F38379E00528D40 /* Chapter1.swift */,
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
 		3758E0991F34683600AD4468 = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +69,7 @@
 		3758E0A41F34683600AD4468 /* Learning-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				370E11EB1F38377500528D40 /* Basic */,
 				3758E0A51F34683600AD4468 /* main.swift */,
 				370E11E51F382B9700528D40 /* link-test.swift */,
 			);
@@ -126,6 +137,7 @@
 			files = (
 				3758E0A61F34683600AD4468 /* main.swift in Sources */,
 				370E11E61F382B9700528D40 /* link-test.swift in Sources */,
+				370E11ED1F38379E00528D40 /* Chapter1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
