@@ -83,4 +83,13 @@ class Chapter1 {
             print("num == 1 | 0")
         }
     }
+    //---------------------------
+    //          for
+    //---------------------------
+    func forTest(times : Int) {
+        
+        for i in 0..<i {
+        
+        }
+    }
 }
