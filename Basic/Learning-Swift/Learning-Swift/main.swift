@@ -32,9 +32,13 @@ print("//                       第一章");
 print("//-------------------------------------------------------");
 var chapter1 = Chapter1();
 chapter1.showDoubleNum();
-chapter1.castTest(num: 1234);
+chapter1.castTest(num: 1234);//测试类型转换与字符
 chapter1.showDoubleNum(asInt: true);
-chapter1.arrayTest();
-chapter1.typeTest();
+chapter1.arrayTest();//测试数组定义
+chapter1.typeTest();//测试类型命名
 
-chapter1.ifTest(times: 19827);
+chapter1.ifTest(times: 19827); //if
+chapter1.whileTest(times: 4) // while
+chapter1.repeat_whileTest(times: 4) //repeat_while
+chapter1.for_inTest(times: 10) // for_in_where
+chapter1.switchTest(num: 1) //switch
