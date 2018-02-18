@@ -13,7 +13,7 @@ func S1BasicTest() {
 	print("//           S1 Swiftでプログラミング")
 	print("//-------------------------------------------")
 	//---------------------------------------------
-	//              データ型と変数
+	//               データ型と変数
 	//---------------------------------------------
 	//識別子
 //	let `if` = 1
@@ -23,6 +23,9 @@ func S1BasicTest() {
 	//---------------------------------------------
 	controlGrammer(of: "if", num: 10)
 	controlGrammer(of: "for-in", num: 3)
+	//---------------------------------------------
+	//               簡単な実行方法
+	//---------------------------------------------
 }
 
 func controlGrammer(of selector : String = "", num : Int = 0) {
@@ -30,6 +33,7 @@ func controlGrammer(of selector : String = "", num : Int = 0) {
 		return
 	}else {
 		switch selector {
+		//TODO: 补充省略部分
 		case "if":
 			//if
 			print("//-----------------------------")
