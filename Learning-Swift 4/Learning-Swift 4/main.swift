@@ -39,5 +39,5 @@ func Swift4BasicLearningRunner(of selecotr : Swift4BasicLearningSelector) {
 //                          実行エリア
 //------------------------------------------------------------------
 Swift4BasicLearningRunner(of: .S1);
-Swift4BasicLearningRunner(of: .S8);
+//Swift4BasicLearningRunner(of: .S8);
 
