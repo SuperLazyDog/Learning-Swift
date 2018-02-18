@@ -27,7 +27,12 @@ func Swift4BasicLearningRunner(of selecotr : Swift4BasicLearningSelector) {
 		//--------------------------------------------
 		//            S1 Swiftでプログラミング
 		//--------------------------------------------
-		S1BasicTest();
+		S1BasicTest()
+	case .S2:
+		//-------------------------------------------
+		//                S2 関数
+		//-------------------------------------------
+		S2BasicTest()
 	default:
 		print("//-------------------------------------------")
 		print("//           \(selecotr) まだ作成されていない")
@@ -38,6 +43,7 @@ func Swift4BasicLearningRunner(of selecotr : Swift4BasicLearningSelector) {
 //------------------------------------------------------------------
 //                          実行エリア
 //------------------------------------------------------------------
-Swift4BasicLearningRunner(of: .S1);
-//Swift4BasicLearningRunner(of: .S8);
+//Swift4BasicLearningRunner(of: .S1)
+Swift4BasicLearningRunner(of: .S2)
+//Swift4BasicLearningRunner(of: .S8)
 
