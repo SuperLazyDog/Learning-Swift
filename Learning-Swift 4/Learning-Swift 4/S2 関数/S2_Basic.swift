@@ -79,6 +79,8 @@ func S2BasicTest() {
 	//---------------------------------------------
 	//               演算子の定義
 	//---------------------------------------------
+	print("双向运算符测试: " <|<| 6)
+	print("前置运算符测试: " + ^|6)
 }
 //------------------------------------------------------------------
 //                    オーバーロード　補助エリア
@@ -89,4 +91,26 @@ func S2BasicTest() {
 //
 //func mySwap(_ a: inout String, _ b: inout String) {}
 //func mySwap(_ a: inout Int, _ b: inout Int) {}
+
+//------------------------------------------------------------------
+//                    演算子の定義　補助エリア
+//------------------------------------------------------------------
+infix operator <|<| // 二项运算符， 右边的数字添加到左侧的字符串上
+func <|<| (lhand: String, rhand: Int) -> String {
+	return lhand + "\(rhand)"
+}
+
+prefix operator ^| // 前置运算符， 把数字转换成字符串
+prefix func ^|(num: Int) -> String {
+	return "\(num)"
+}
+
+precedencegroup MyTestPrecedence {
+	associativity: right
+//	higherThan:
+//	lowerThan:
+	assignment: true
+}
+//precedencegroup 优先群名 {
+//	associativity: 结合规则 // right, left, none
 
