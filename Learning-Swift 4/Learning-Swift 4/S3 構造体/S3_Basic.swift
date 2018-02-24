@@ -76,6 +76,35 @@ func S3BasicTest() {
 		}
 	}
 	myTest3_4 = 3
+	//---------------------------------------------
+	//                添字付け
+	//---------------------------------------------
+	struct MyTest3_5 {
+		var a: Int = 0;
+		var b: Bool = false;
+		subscript(index: Int) -> String {
+			get {
+				switch index {
+				case 0:
+					return "\(self.a)"
+				case 1:
+					return "\(self.b)"
+				default:
+					return "nil"
+				}
+			}
+			set {
+				switch index {
+				case 0:
+					a = newValue.count
+				case 1:
+					b = newValue.hasPrefix("true") ? true : false
+				default:
+					break
+				}
+			}
+		}
+	}
 	
 }
 
