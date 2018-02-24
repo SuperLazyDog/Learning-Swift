@@ -37,14 +37,46 @@ func S3BasicTest() {
 		}
 	}
 	//---------------------------------------------
-	//               メソッド
+	//                メソッド
 	//---------------------------------------------
 	let myTest3_2 = MyTest3_2.init()
 	!myTest3_2
 	print(myTest3_2 + 100)
 	//---------------------------------------------
-	//               プロパティ
+	//                プロパティ
 	//---------------------------------------------
+	struct MyTest3_3 {
+		var a: Int = 1, b: Int = 2
+		var sum: Int {
+//			mutating get {
+			get {
+				return a + b
+			}
+			set {
+				a += newValue
+			}
+		}
+	}
+	var myTest3_3: MyTest3_3 = MyTest3_3.init()
+	print("Sum1: \(myTest3_3.sum), a: \(myTest3_3.a), b: \(myTest3_3.b)")
+	//               100 + 3 = 103
+	myTest3_3.sum = (100 + myTest3_3.sum)
+	//上一行相当于 myTest3_3.sum = 103
+	
+	print("Sum2: \(myTest3_3.sum), a: \(myTest3_3.a), b: \(myTest3_3.b)")
+//	let myTest3_3_v2 = myTest3_3
+//	myTest3_3_v2.sum
+	// 监听器
+	var myTest3_4: Int = 1 {
+		willSet {
+			print("newValue: \(newValue)")
+		}
+		didSet {
+			print("oldValue \(oldValue)")
+		}
+	}
+	myTest3_4 = 3
+	
 }
 
 //------------------------------------------------------------------
@@ -63,6 +95,20 @@ struct MyTest3_2 {
 	static func +=(lhs: MyTest3_2, rhs: Int) -> String {
 		let str: String = "\(lhs.a) + \(rhs) = \(lhs.a + rhs)"
 		return str
+	}
+}
+
+//------------------------------------------------------------------
+//                    プロパティ　補助エリア
+//------------------------------------------------------------------
+//全局范围也可以定义计算型属性
+var auxVal3_2 = 1 // auxiliary adj. 辅助的
+var globalProperty3_2: Int {
+	get {
+		return auxVal3_2*auxVal3_2
+	}
+	set {
+		auxVal3_2 += newValue
 	}
 }
 
