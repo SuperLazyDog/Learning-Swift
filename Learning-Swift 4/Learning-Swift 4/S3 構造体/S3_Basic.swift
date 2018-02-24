@@ -39,8 +39,30 @@ func S3BasicTest() {
 	//---------------------------------------------
 	//               メソッド
 	//---------------------------------------------
-	struct MyTest3_2 {
-		
+	let myTest3_2 = MyTest3_2.init()
+	!myTest3_2
+	print(myTest3_2 + 100)
+	//---------------------------------------------
+	//               プロパティ
+	//---------------------------------------------
+}
+
+//------------------------------------------------------------------
+//                     3.2メソッド　補助エリア
+//------------------------------------------------------------------
+struct MyTest3_2 {
+	var a: Int = 999;
+	//运算符定义
+	static prefix func !(item: MyTest3_2) {
+		print("a + 1 = \(item.a+1), hello")
+	}
+	static func +(lhs: MyTest3_2, rhs: Int) -> String {
+		let str: String = "\(lhs.a) + \(rhs) = \(lhs.a + rhs)"
+		return str
+	}
+	static func +=(lhs: MyTest3_2, rhs: Int) -> String {
+		let str: String = "\(lhs.a) + \(rhs) = \(lhs.a + rhs)"
+		return str
 	}
 }
 
