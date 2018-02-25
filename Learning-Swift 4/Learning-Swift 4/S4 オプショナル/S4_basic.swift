@@ -35,13 +35,15 @@ func S4BasicTest() {
 		print("guard error, myOptional4_2 is nil")
 		return
 	}
-	let myOptional4_3: Int? = 2
+	let myOptional4_3: Int? = myOptional4_2_true + 1
 	// nil合体演算子
 	let myOptional4_3_test1 = myOptional4_2 ?? 0 // ??结果的类型和右边相同
 	print(myOptional4_3_test1) // 1
 	let myOptional4_3_test2 = myOptional4_2 ?? myOptional4_3
 	print(String.init(describing: myOptional4_3_test2)) // Optional(1)
-	
+	// readline
+//	readLine() // 默认删除换行字符
+//	readLine(strippingNewline: false) // 不删除换行字符
 }
 
 //------------------------------------------------------------------
