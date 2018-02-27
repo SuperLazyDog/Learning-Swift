@@ -18,6 +18,26 @@ func S5BasicTest() {
 	//---------------------------------------------
 	//                 プロトコル
 	//---------------------------------------------
+	struct MyTest5_1: SampleProtocol { // 采用上面协议的结构体
+		var sampleString: String {
+			return "sample protocol 5.1"
+		}
+	}
+	let myTest5_1: MyTest5_1 = MyTest5_1()
+	print(myTest5_1.sampleString)
+	//---------------------------------------------
+	//               プロトコルの宣言
+	//---------------------------------------------
+	
+}
+
+//------------------------------------------------------------------
+//                    プロトコル　補助エリア
+//------------------------------------------------------------------
+protocol SampleProtocol {
+	var sampleString: String { get }
+//	static var sampleString2: String { get }
+//	static func + (lhs: Self, rhs: Self) -> Int
 }
 
 //------------------------------------------------------------------
