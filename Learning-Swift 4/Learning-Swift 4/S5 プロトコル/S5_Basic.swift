@@ -76,8 +76,6 @@ func S5BasicTest() {
 		func getData(data: Double) -> Double {
 			return 0
 		}
-		
-		
 	}
 }
 
