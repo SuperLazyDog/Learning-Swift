@@ -43,6 +43,11 @@ func Swift4BasicLearningRunner(of selecotr : Swift4BasicLearningSelector) {
 		//               S4 オプショナル
 		//-------------------------------------------
 		S4BasicTest()
+	case .S5:
+		//-------------------------------------------
+		//               S5 プロトコル
+		//-------------------------------------------
+		S5BasicTest()
 	default:
 		print("//-------------------------------------------")
 		print("//           \(selecotr) まだ作成されていない")
@@ -56,6 +61,7 @@ func Swift4BasicLearningRunner(of selecotr : Swift4BasicLearningSelector) {
 //Swift4BasicLearningRunner(of: .S1)
 //Swift4BasicLearningRunner(of: .S2)
 //Swift4BasicLearningRunner(of: .S3)
-Swift4BasicLearningRunner(of: .S4)
+//Swift4BasicLearningRunner(of: .S4)
+Swift4BasicLearningRunner(of: .S5)
 //Swift4BasicLearningRunner(of: .S8)
 
