@@ -48,7 +48,37 @@ func S5BasicTest() {
 	let myTest5_3: MyTest5_3 = MyTest5_3()
 	let myTest5_3_2 = myTest5_3.merge(newOne: MyTest5_3(data: 9))
 	print(myTest5_3, myTest5_3_2, separator: "\n")
+	//---------------------------------------------
+	//              代表的なプロトコルの例
+	//---------------------------------------------
+	// TODO: 创建采用Sequence的类型
+//	struct mySequenceTest5_4: Sequence {
+//		typealias Element = Int
+//		struct Iterator: IteratorProtocol {
+//			typealias Element = Int
+//			var iteratorArray: [Element] = []
+//			var i: Int = 0
+//			mutating func next() -> Int? {
+//				return iteratorArray[i]
+//			}
+//		}
+//		typealias SubSequence = [Int]
+//		var intArray: [Int] = []
+//		func makeIterator() -> [Int] {
+//			return intArray
+//		}
+//	}
 	
+//	var myTest5_4: Array<Int> = [0]
+	struct myTest5_4: SampleProtocol5_4 {
+//		typealias ABCDE = Double
+		var sampleData: ABCDE
+		func getData(data: Double) -> Double {
+			return 0
+		}
+		
+		
+	}
 }
 
 //------------------------------------------------------------------
@@ -73,6 +103,13 @@ protocol SampleProtocol5_2 {
 
 protocol SampleProtocol5_2_2 {
 	associatedtype SampleData: Equatable where SampleData: CustomStringConvertible, SampleData: CustomDebugStringConvertible
+}
+//------------------------------------------------------------------
+//                  代表的なプロトコルの例　補助エリア
+//------------------------------------------------------------------
+protocol SampleProtocol5_4 {
+	associatedtype ABCDE = Int // 设定默认的型，没有声明且没法推导的时候会用这个设定
+	func getData(data: Self.ABCDE) -> Self.ABCDE
 }
 //------------------------------------------------------------------
 //                    ....　補助エリア
