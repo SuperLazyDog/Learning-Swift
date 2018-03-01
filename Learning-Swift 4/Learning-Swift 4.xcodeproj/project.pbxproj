@@ -11,6 +11,7 @@
 		4920A1DB203B117400F7E48D /* S3_Basic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920A1DA203B117400F7E48D /* S3_Basic.swift */; };
 		4929A8C820455BFF00515370 /* S5_Basic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4929A8C720455BFF00515370 /* S5_Basic.swift */; };
 		4932DBA920380D0B00B52E32 /* S1_Basic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4932DBA820380D0B00B52E32 /* S1_Basic.swift */; };
+		4976A6D82048796600849D39 /* S6_Basic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976A6D72048796600849D39 /* S6_Basic.swift */; };
 		49973274202DEB2F00561A72 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49973273202DEB2F00561A72 /* main.swift */; };
 		49DEF4A4204203F100880402 /* S4_basic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DEF4A3204203F100880402 /* S4_basic.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		4920A1DA203B117400F7E48D /* S3_Basic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S3_Basic.swift; sourceTree = "<group>"; };
 		4929A8C720455BFF00515370 /* S5_Basic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S5_Basic.swift; sourceTree = "<group>"; };
 		4932DBA820380D0B00B52E32 /* S1_Basic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S1_Basic.swift; sourceTree = "<group>"; };
+		4976A6D72048796600849D39 /* S6_Basic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S6_Basic.swift; sourceTree = "<group>"; };
 		49973270202DEB2F00561A72 /* Learning-Swift 4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Learning-Swift 4"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49973273202DEB2F00561A72 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		49DEF4A3204203F100880402 /* S4_basic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S4_basic.swift; sourceTree = "<group>"; };
@@ -154,11 +156,13 @@
 			path = S8;
 			sourceTree = "<group>";
 		};
-		4932DBA720380C9500B52E32 /* S6 */ = {
+		4932DBA720380C9500B52E32 /* S6 基本的なデータ型 */ = {
 			isa = PBXGroup;
 			children = (
+				4976A6D72048796600849D39 /* S6_Basic.swift */,
 			);
-			path = S6;
+			name = "S6 基本的なデータ型";
+			path = "S6 基本的なデータ型";
 			sourceTree = "<group>";
 		};
 		49973267202DEB2F00561A72 = {
@@ -186,7 +190,7 @@
 				4932DBA420380C9400B52E32 /* S3 構造体 */,
 				4932DB9A20380C9300B52E32 /* S4 オプショナル */,
 				4932DB9C20380C9300B52E32 /* S5 プロトコル */,
-				4932DBA720380C9500B52E32 /* S6 */,
+				4932DBA720380C9500B52E32 /* S6 基本的なデータ型 */,
 				4932DB9F20380C9400B52E32 /* S7 */,
 				4932DBA620380C9500B52E32 /* S8 */,
 				4932DB9D20380C9400B52E32 /* S9 */,
@@ -262,6 +266,7 @@
 				4932DBA920380D0B00B52E32 /* S1_Basic.swift in Sources */,
 				4929A8C820455BFF00515370 /* S5_Basic.swift in Sources */,
 				49DEF4A4204203F100880402 /* S4_basic.swift in Sources */,
+				4976A6D82048796600849D39 /* S6_Basic.swift in Sources */,
 				4920A1D9203A006B00F7E48D /* S2_Basic.swift in Sources */,
 				49973274202DEB2F00561A72 /* main.swift in Sources */,
 			);
