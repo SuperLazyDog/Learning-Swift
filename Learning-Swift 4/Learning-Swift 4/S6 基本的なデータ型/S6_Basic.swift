@@ -22,8 +22,26 @@ func S6BasicTest() {
 	//---------------------------------------------
 	//                   配列
 	//---------------------------------------------
+//	let sample_str = "hellp" // 测试String是否采用了Collection
+//	for str in sample_str {
+//		print("str: \(str)")
+//	}
+	var arrayTest6_2_1 = [1, 2, 3]
+	print(arrayTest6_2_1)
+	arrayTest6_2_1[1...2] = [4, 5, 6, 7]
+	print(arrayTest6_2_1)
+	// 构造函数
+	arrayTest6_2_1 = Array<Int>(arrayLiteral: 3, 2, 1)
+	arrayTest6_2_1 = Array<Int>([9, 8, 7])
+	print(arrayTest6_2_1)
+	
 	
 }
+
+//------------------------------------------------------------------
+//                      配列　補助エリア
+//------------------------------------------------------------------
+func sample(a: Int..., b: Bool) -> Bool { return false }
 
 //------------------------------------------------------------------
 //                    ....　補助エリア
