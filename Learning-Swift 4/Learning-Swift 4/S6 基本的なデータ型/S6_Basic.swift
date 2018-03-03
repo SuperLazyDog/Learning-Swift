@@ -35,9 +35,23 @@ func S6BasicTest() {
 	arrayTest6_2_1 = Array<Int>([9, 8, 7])
 	print(arrayTest6_2_1)
 	
-	
+	//---------------------------------------------
+	//                文字列と文字
+	//---------------------------------------------
+	print("-- 构造函数 --")
+	print("\u{3099}")
+	//合成字符
+	let gu: Character = "\u{30B0}"  // グ
+	let ku: Character = "\u{30AF}\u{3099}" // ク + [゙]
+	print( gu == ku )
+	//主要方法
+	var stringSample6_3: String = "12345"
+	stringSample6_3.append(contentsOf: "996677")
+	stringSample6_3.append(contentsOf: ["a", "b", "c"])
+	print(stringSample6_3)
+//	stringSample6_3.removeSubrange(<#T##bounds: Range<String.Index>##Range<String.Index>#>)
+	print(stringSample6_3[stringSample6_3.startIndex])
 }
-
 //------------------------------------------------------------------
 //                      配列　補助エリア
 //------------------------------------------------------------------
