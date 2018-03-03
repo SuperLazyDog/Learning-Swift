@@ -51,6 +51,12 @@ func S6BasicTest() {
 	print(stringSample6_3)
 //	stringSample6_3.removeSubrange(<#T##bounds: Range<String.Index>##Range<String.Index>#>)
 	print(stringSample6_3[stringSample6_3.startIndex])
+	//---------------------------------------------
+	//                  辞書
+	//---------------------------------------------
+	var dictionarySample: [String: Int]  = ["a": 1]
+	print(dictionarySample.updateValue(1234, forKey: "a") ?? "nil")
+	print(dictionarySample.removeValue(forKey: "a") ?? "nil")
 }
 //------------------------------------------------------------------
 //                      配列　補助エリア
