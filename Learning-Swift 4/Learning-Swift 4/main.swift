@@ -53,6 +53,11 @@ func Swift4BasicLearningRunner(of selecotr : Swift4BasicLearningSelector) {
 		//             S6 基本的なデータ型
 		//-------------------------------------------
 		S6BasicTest()
+	case .S7:
+		//-------------------------------------------
+		//               S7 パターン
+		//-------------------------------------------
+		S7BasicTest()
 	default:
 		print("//-------------------------------------------")
 		print("//           \(selecotr) まだ作成されていない")
@@ -68,6 +73,7 @@ func Swift4BasicLearningRunner(of selecotr : Swift4BasicLearningSelector) {
 //Swift4BasicLearningRunner(of: .S3)
 //Swift4BasicLearningRunner(of: .S4)
 //Swift4BasicLearningRunner(of: .S5)
-Swift4BasicLearningRunner(of: .S6)
+//Swift4BasicLearningRunner(of: .S6)
+Swift4BasicLearningRunner(of: .S7)
 //Swift4BasicLearningRunner(of: .S8)
 
