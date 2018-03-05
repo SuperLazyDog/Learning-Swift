@@ -58,6 +58,11 @@ func Swift4BasicLearningRunner(of selecotr : Swift4BasicLearningSelector) {
 		//               S7 パターン
 		//-------------------------------------------
 		S7BasicTest()
+	case .S8:
+		//-------------------------------------------
+		//              S8 クラスと継承
+		//-------------------------------------------
+		S8BasicTest()
 	default:
 		print("//-------------------------------------------")
 		print("//           \(selecotr) まだ作成されていない")
@@ -74,6 +79,6 @@ func Swift4BasicLearningRunner(of selecotr : Swift4BasicLearningSelector) {
 //Swift4BasicLearningRunner(of: .S4)
 //Swift4BasicLearningRunner(of: .S5)
 //Swift4BasicLearningRunner(of: .S6)
-Swift4BasicLearningRunner(of: .S7)
-//Swift4BasicLearningRunner(of: .S8)
+//Swift4BasicLearningRunner(of: .S7)
+Swift4BasicLearningRunner(of: .S8)
 
