@@ -57,6 +57,7 @@ func S6BasicTest() {
 	var dictionarySample: [String: Int]  = ["a": 1]
 	print(dictionarySample.updateValue(1234, forKey: "a") ?? "nil")
 	print(dictionarySample.removeValue(forKey: "a") ?? "nil")
+	print("sample index:\(dictionarySample.startIndex)")
 }
 //------------------------------------------------------------------
 //                      配列　補助エリア
