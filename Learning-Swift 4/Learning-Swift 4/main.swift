@@ -63,6 +63,11 @@ func Swift4BasicLearningRunner(of selecotr : Swift4BasicLearningSelector) {
 		//              S8 クラスと継承
 		//-------------------------------------------
 		S8BasicTest()
+	case .S9:
+		//-------------------------------------------
+		//              S9 メモリ管理
+		//-------------------------------------------
+		S9BasicTest()
 	default:
 		print("//-------------------------------------------")
 		print("//           \(selecotr) まだ作成されていない")
@@ -80,5 +85,6 @@ func Swift4BasicLearningRunner(of selecotr : Swift4BasicLearningSelector) {
 //Swift4BasicLearningRunner(of: .S5)
 //Swift4BasicLearningRunner(of: .S6)
 //Swift4BasicLearningRunner(of: .S7)
-Swift4BasicLearningRunner(of: .S8)
+//Swift4BasicLearningRunner(of: .S8)
+Swift4BasicLearningRunner(of: .S9)
 
