@@ -68,6 +68,11 @@ func Swift4BasicLearningRunner(of selecotr : Swift4BasicLearningSelector) {
 		//              S9 メモリ管理
 		//-------------------------------------------
 		S9BasicTest()
+	case .S10:
+		//-------------------------------------------
+		//                S10 拡張
+		//-------------------------------------------
+		S10BasicTest()
 	default:
 		print("//-------------------------------------------")
 		print("//           \(selecotr) まだ作成されていない")
@@ -86,5 +91,6 @@ func Swift4BasicLearningRunner(of selecotr : Swift4BasicLearningSelector) {
 //Swift4BasicLearningRunner(of: .S6)
 //Swift4BasicLearningRunner(of: .S7)
 //Swift4BasicLearningRunner(of: .S8)
-Swift4BasicLearningRunner(of: .S9)
+//Swift4BasicLearningRunner(of: .S9)
+Swift4BasicLearningRunner(of: .S10)
 
