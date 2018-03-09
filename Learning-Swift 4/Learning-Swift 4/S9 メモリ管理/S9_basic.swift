@@ -55,6 +55,12 @@ func S9BasicTest() {
 	if (optionalChainTest.complexData?.data = getSampleData()) != nil {
 		print("ok")
 	}
+	//---------------------------------------------
+	//                  キーパス
+	//---------------------------------------------
+	let keyPath1 = \OptionalChainTestClass.complexData?.data
+	print(type(of: keyPath1))
+	print(optionalChainTest[keyPath: keyPath1] ?? "nil")
 }
 //------------------------------------------------------------------
 //                    ....　補助エリア
