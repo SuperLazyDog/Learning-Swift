@@ -44,6 +44,7 @@
 		49973273202DEB2F00561A72 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		49C95F332050CC0C003CCDC0 /* S9_basic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S9_basic.swift; sourceTree = "<group>"; };
 		49C95F352052A81C003CCDC0 /* S10_basic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S10_basic.swift; sourceTree = "<group>"; };
+		49C95F372052F6FB003CCDC0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		49DEF4A3204203F100880402 /* S4_basic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S4_basic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -181,6 +182,7 @@
 		49973267202DEB2F00561A72 = {
 			isa = PBXGroup;
 			children = (
+				49C95F372052F6FB003CCDC0 /* README.md */,
 				49973272202DEB2F00561A72 /* Learning-Swift 4 */,
 				49973271202DEB2F00561A72 /* Products */,
 			);
