@@ -18,9 +18,44 @@ func S9BasicTest() {
 	//---------------------------------------------
 	//               参照型データとARC
 	//---------------------------------------------
+	// 测试类内可选型属性
+//	class Sample {
+//		var a: Int?
+//	}
+//	var sample = Sample.init()
+//	guard var a = sample.a else {
+//		print("nil")
+//		return
+//	}
+	//---------------------------------------------
+	//                強い参照の循環
+	//---------------------------------------------
 	
+	//---------------------------------------------
+	//              オプショナルチェーン
+	//---------------------------------------------
+	struct OptionalChainSampleData {
+		var data: Int = 1
+	}
+	class OptionalChainTestClass {
+		var complexData: OptionalChainSampleData?
+		init() {
+		}
+		init(complexData: OptionalChainSampleData) {
+			self.complexData = complexData
+		}
+	}
+	func getSampleData() -> Int {
+		print("runned")
+		return 1;
+	}
+//	let optionalChainTest = OptionalChainTestClass.init(complexData: OptionalChainSampleData.init())
+	let optionalChainTest = OptionalChainTestClass.init()
+	optionalChainTest.complexData?.data = getSampleData()
+	if (optionalChainTest.complexData?.data = getSampleData()) != nil {
+		print("ok")
+	}
 }
-
 //------------------------------------------------------------------
 //                    ....　補助エリア
 //------------------------------------------------------------------
