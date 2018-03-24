@@ -73,6 +73,11 @@ func Swift4BasicLearningRunner(of selecotr : Swift4BasicLearningSelector) {
 		//                S10 拡張
 		//-------------------------------------------
 		S10BasicTest()
+	case .S11:
+		//-------------------------------------------
+		//                S10 拡張
+		//-------------------------------------------
+		S11BasicTest()
 	default:
 		print("//-------------------------------------------")
 		print("//           \(selecotr) まだ作成されていない")
@@ -92,5 +97,6 @@ func Swift4BasicLearningRunner(of selecotr : Swift4BasicLearningSelector) {
 //Swift4BasicLearningRunner(of: .S7)
 //Swift4BasicLearningRunner(of: .S8)
 //Swift4BasicLearningRunner(of: .S9)
-Swift4BasicLearningRunner(of: .S10)
+//Swift4BasicLearningRunner(of: .S10)
+Swift4BasicLearningRunner(of: .S11)
 

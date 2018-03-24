@@ -15,6 +15,7 @@
 		495F153C204D9A49003055A7 /* S8_Basic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495F153B204D9A49003055A7 /* S8_Basic.swift */; };
 		4976A6D82048796600849D39 /* S6_Basic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976A6D72048796600849D39 /* S6_Basic.swift */; };
 		49973274202DEB2F00561A72 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49973273202DEB2F00561A72 /* main.swift */; };
+		49A3E376206607990042086A /* S11_Basic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A3E375206607990042086A /* S11_Basic.swift */; };
 		49C95F342050CC0C003CCDC0 /* S9_basic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C95F332050CC0C003CCDC0 /* S9_basic.swift */; };
 		49C95F362052A81C003CCDC0 /* S10_basic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C95F352052A81C003CCDC0 /* S10_basic.swift */; };
 		49DEF4A4204203F100880402 /* S4_basic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DEF4A3204203F100880402 /* S4_basic.swift */; };
@@ -42,6 +43,7 @@
 		4976A6D72048796600849D39 /* S6_Basic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S6_Basic.swift; sourceTree = "<group>"; };
 		49973270202DEB2F00561A72 /* Learning-Swift 4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Learning-Swift 4"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49973273202DEB2F00561A72 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		49A3E375206607990042086A /* S11_Basic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S11_Basic.swift; sourceTree = "<group>"; };
 		49C95F332050CC0C003CCDC0 /* S9_basic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S9_basic.swift; sourceTree = "<group>"; };
 		49C95F352052A81C003CCDC0 /* S10_basic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S10_basic.swift; sourceTree = "<group>"; };
 		49C95F372052F6FB003CCDC0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -77,11 +79,12 @@
 			path = "S4 オプショナル";
 			sourceTree = "<group>";
 		};
-		4932DB9B20380C9300B52E32 /* S11 */ = {
+		4932DB9B20380C9300B52E32 /* S11 エラー処理 */ = {
 			isa = PBXGroup;
 			children = (
+				49A3E375206607990042086A /* S11_Basic.swift */,
 			);
-			path = S11;
+			path = "S11 エラー処理";
 			sourceTree = "<group>";
 		};
 		4932DB9C20380C9300B52E32 /* S5 プロトコル */ = {
@@ -210,7 +213,7 @@
 				4932DBA620380C9500B52E32 /* S8 クラスと継承 */,
 				4932DB9D20380C9400B52E32 /* S9 メモリ管理 */,
 				4932DBA220380C9400B52E32 /* S10 拡張 */,
-				4932DB9B20380C9300B52E32 /* S11 */,
+				4932DB9B20380C9300B52E32 /* S11 エラー処理 */,
 				4932DBA520380C9400B52E32 /* S12 */,
 				4932DB9E20380C9400B52E32 /* S13 */,
 				4932DBA120380C9400B52E32 /* S14 */,
@@ -280,6 +283,7 @@
 				49C95F342050CC0C003CCDC0 /* S9_basic.swift in Sources */,
 				4920A1DB203B117400F7E48D /* S3_Basic.swift in Sources */,
 				495F153C204D9A49003055A7 /* S8_Basic.swift in Sources */,
+				49A3E376206607990042086A /* S11_Basic.swift in Sources */,
 				4932DBA920380D0B00B52E32 /* S1_Basic.swift in Sources */,
 				4929A8C820455BFF00515370 /* S5_Basic.swift in Sources */,
 				49DEF4A4204203F100880402 /* S4_basic.swift in Sources */,
