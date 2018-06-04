@@ -65,8 +65,6 @@ func controlGrammer(of selector : String = "", num : Int = 0) {
 			for i in 0..<innerNum {
 				print("i = \(i)")
 			}
-		case "while":
-			break
 		default:
 			print("default: str = \(selector)")
 		}

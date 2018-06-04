@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4908392E20C5AFFC00338C5F /* S12_basic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4908392D20C5AFFC00338C5F /* S12_basic.swift */; };
 		4920A1D9203A006B00F7E48D /* S2_Basic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920A1D8203A006B00F7E48D /* S2_Basic.swift */; };
 		4920A1DB203B117400F7E48D /* S3_Basic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920A1DA203B117400F7E48D /* S3_Basic.swift */; };
 		4929A8C820455BFF00515370 /* S5_Basic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4929A8C720455BFF00515370 /* S5_Basic.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4908392D20C5AFFC00338C5F /* S12_basic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S12_basic.swift; sourceTree = "<group>"; };
 		4920A1D8203A006B00F7E48D /* S2_Basic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S2_Basic.swift; sourceTree = "<group>"; };
 		4920A1DA203B117400F7E48D /* S3_Basic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S3_Basic.swift; sourceTree = "<group>"; };
 		4929A8C720455BFF00515370 /* S5_Basic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S5_Basic.swift; sourceTree = "<group>"; };
@@ -158,11 +160,13 @@
 			path = "S3 構造体";
 			sourceTree = "<group>";
 		};
-		4932DBA520380C9400B52E32 /* S12 */ = {
+		4932DBA520380C9400B52E32 /* S12 クロージャ */ = {
 			isa = PBXGroup;
 			children = (
+				4908392D20C5AFFC00338C5F /* S12_basic.swift */,
 			);
-			path = S12;
+			name = "S12 クロージャ";
+			path = "S12 クロージャ";
 			sourceTree = "<group>";
 		};
 		4932DBA620380C9500B52E32 /* S8 クラスと継承 */ = {
@@ -214,7 +218,7 @@
 				4932DB9D20380C9400B52E32 /* S9 メモリ管理 */,
 				4932DBA220380C9400B52E32 /* S10 拡張 */,
 				4932DB9B20380C9300B52E32 /* S11 エラー処理 */,
-				4932DBA520380C9400B52E32 /* S12 */,
+				4932DBA520380C9400B52E32 /* S12 クロージャ */,
 				4932DB9E20380C9400B52E32 /* S13 */,
 				4932DBA120380C9400B52E32 /* S14 */,
 				4932DBA320380C9400B52E32 /* S15 */,
@@ -283,6 +287,7 @@
 				49C95F342050CC0C003CCDC0 /* S9_basic.swift in Sources */,
 				4920A1DB203B117400F7E48D /* S3_Basic.swift in Sources */,
 				495F153C204D9A49003055A7 /* S8_Basic.swift in Sources */,
+				4908392E20C5AFFC00338C5F /* S12_basic.swift in Sources */,
 				49A3E376206607990042086A /* S11_Basic.swift in Sources */,
 				4932DBA920380D0B00B52E32 /* S1_Basic.swift in Sources */,
 				4929A8C820455BFF00515370 /* S5_Basic.swift in Sources */,
