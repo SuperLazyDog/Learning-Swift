@@ -29,19 +29,21 @@ func S11BasicTest() {
 //	default:
 //		puts("default")
 //	}
-	var dataSource: [Int] = [-10, 0, 1, 1000]
+	let dataSource: [Int] = [-10, 0, 1, 751, 1000]
 	for item in dataSource {
 		do {
-			print("//---------------------------------------------------------")
+			print("")
 			let result = try sampleErrorFunc2WithOptionalReturnType(mode: item)
-			print(result != nil ? "\(result)" : "nil")
+			print(result != nil ? "\(String(describing: result))" : "nil")
 			if let result = result {
-				print("result: \(result) temp: \(temp)")
+				print("result: \(result) item: \(item)")
 			} else {
 				print("there is an error")
 			}
+		} catch SampleError1.asNumer(let a) {
+			print("UUID asNumer a=\(a)")
 		} catch {
-			print(error)
+			print("UUID asSimpleResultA: \(error)")
 		}
 	}
 	
@@ -71,6 +73,8 @@ func sampleErrorFunc2WithOptionalReturnType(mode: Int) throws -> Bool? {
 		return false
 	case 0:
 		return nil
+	case 900...:
+		throw SampleError1.asNumer(mode)
 	default: // > 100
 		throw SampleError1.asSimpleResultA
 	}
