@@ -103,6 +103,6 @@ func Swift4BasicLearningRunner(of selecotr : Swift4BasicLearningSelector) {
 //Swift4BasicLearningRunner(of: .S8)
 //Swift4BasicLearningRunner(of: .S9)
 //Swift4BasicLearningRunner(of: .S10)
-//Swift4BasicLearningRunner(of: .S11)
-Swift4BasicLearningRunner(of: .S12)
+Swift4BasicLearningRunner(of: .S11)
+//Swift4BasicLearningRunner(of: .S12)
 

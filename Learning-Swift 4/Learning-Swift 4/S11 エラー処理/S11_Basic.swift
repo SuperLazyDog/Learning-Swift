@@ -46,7 +46,7 @@ func S11BasicTest() {
 			print("UUID asSimpleResultA: \(error)")
 		}
 	}
-	
+	jsonTest()
 }
 
 //------------------------------------------------------------------
@@ -77,6 +77,39 @@ func sampleErrorFunc2WithOptionalReturnType(mode: Int) throws -> Bool? {
 		throw SampleError1.asNumer(mode)
 	default: // > 100
 		throw SampleError1.asSimpleResultA
+	}
+}
+
+
+// JSON
+func jsonTest() {
+	struct People: Codable, CustomStringConvertible {
+		let name: String
+		var age: Int
+		var description: String {
+			return name + " \(age)"
+		}
+	}
+	let group = [People.init(name: "鲁班七号", age: 4), People.init(name: "姜子牙", age: 100)]
+	let path1 = URL.init(fileURLWithPath: "./group.json")
+	let path2 = URL.init(fileURLWithPath: "./person.json")
+	let encoder = JSONEncoder.init()
+	let decoder = JSONDecoder.init()
+	
+	do {
+		let d = try encoder.encode(group)
+		try d.write(to: path1)
+		let load = try Data.init(contentsOf: path1)
+		let gs = try decoder.decode([People].self, from: load)
+		print(gs)
+		
+		let personJson = try encoder.encode(group[0])
+		try personJson.write(to: path2)
+		let personData = try Data.init(contentsOf: path2)
+		let person = try decoder.decode(People.self, from: personData)
+		print(person)
+	} catch  {
+		print(error)
 	}
 }
 //------------------------------------------------------------------
